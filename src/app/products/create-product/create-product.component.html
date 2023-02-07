@@ -1,0 +1,26 @@
+<div class="container">
+    <button (click)="openForm()" class="btn btn-light"><b>Crear producto</b></button>
+    <form *ngIf="showForm">
+        <div>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <label><b>Nombre producto: </b></label>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="Nombre producto." aria-label="productName"
+                        aria-describedby="addon-wrapping">
+                </div>
+                </div>
+                <div class="col-6">
+                    <label><b>Nombre producto: </b></label>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">$</span>
+                    <input type="text" class="form-control" placeholder="Valor producto." aria-label="productValue"
+                        aria-describedby="addon-wrapping">
+                </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

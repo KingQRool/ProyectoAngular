@@ -1,0 +1,22 @@
+<hr>
+<div class="container">
+<section>
+    <table class="table">
+        <thead>
+            <tr class="header">
+                <th scope="col">Id Prodcto</th>
+                <th scope="col">Nombre producto</th>
+                <th scope="col">Valor producto</th>
+            </tr>
+        </thead>
+        <tbody class="tableBody">
+            <tr *ngFor="let product of products">
+                <td>{{product.idProduct}}</td>
+                <td>{{product.productName}}</td>
+                <td>{{product.productValue}}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</div>
+<app-create-product></app-create-product>
