@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomersComponent } from './customers.component';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
-
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import { CreateCustomerComponent } from './create-customer/create-customer.compo
     CreateCustomerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports:[
     CustomersComponent,
