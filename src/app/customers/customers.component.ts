@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Customers } from "../models/customers.model";
+import { Component } from "@angular/core";
+import { Customers } from "../models/customers.model"
 
 @Component({
   selector: 'app-customers',
