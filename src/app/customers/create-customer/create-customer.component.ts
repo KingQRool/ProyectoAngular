@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-customer',
@@ -25,12 +25,12 @@ export class CreateCustomerComponent {
 
     buildCustomerForm(){
       this.customerForm = this.customerFormBuilder.group({
-          customerName:[''],
+          customerName:['',[Validators.required, Validators.maxLength(20)]],
           customerTelephone:[''],
-          customerEmail:[''],
-          customerDocumentType:[''],
-          customerDocumentNumber:[''],
-          customerPassword:['']
+          customerEmail:['',[Validators.required, Validators.email]],
+          customerDocumentType:['',[Validators.required, Validators.minLength(2)]],
+          customerDocumentNumber:['',[Validators.required]],
+          customerPassword:['',Validators.required]
       })
     }
 
