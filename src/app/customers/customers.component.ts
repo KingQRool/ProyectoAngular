@@ -6,6 +6,7 @@ import { Customers } from "../models/customers.model"
   templateUrl: './customers.component.html',
   styleUrls: ['./customers.component.scss']
 })
+
 export class CustomersComponent {
     customer: Customers[] = [
       {
