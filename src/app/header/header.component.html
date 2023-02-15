@@ -53,11 +53,7 @@
   <div class="container" >
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav my-1">
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#" style="margin-left: 315px;">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Formulario De Cliente</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Formulario De Prestamo</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Interfaz De Clientes</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Interfaz De Prestamos</a> </li>
+        <li *ngFor="let item of headerList" class="nav-item"> <a class="nav-link active" aria-current="page" style="margin-left: 50px;">{{ item }}</a> </li>
       </ul>
     </div>
   </div>

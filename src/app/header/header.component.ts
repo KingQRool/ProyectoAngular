@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  headerList = ['Inicio','Clientes','Prestamos','Productos']
 }
+
+// {
+// id: 1,
+// name: 'Inicio',
+// },
+// {
+// id: 1,
+// name: 'Clientes',
+// },
+// {
+// id: 1,
+// name: 'Prestamos',
+// }
