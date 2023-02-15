@@ -26,11 +26,13 @@ export class LoanFormComponent {
       telephone:[''],
       email:[''],
       productType:[''],
-      productNanme:[''],
+      productName:[''],
       totalAmount:[''],
       paymentDay:['']
     })
   }
+
+//get customerName(){ return this.customerForm.get('customerName')}
 
   get customerName(){ return this.loanForm.get('customerName')}
   get telephone(){ return this.loanForm.get('telephone')}
