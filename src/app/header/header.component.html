@@ -7,62 +7,16 @@
 
   <body>
 
-  <!--
-  <nav class="" id="">
-          <div class="container">
-              <a class="" href="">
-                  <img src="" style="height: 40px;" alt="*AQUI VA EL LOGO*" id="">
-              </a>
-              <button class="" type="button">
-                  Menu
-                  <i class=""></i>
-              </button>
-              <div class="" id="">
-                  <ul class="">
-                  <li class=""><a class="">Inicio</a></li>
-                  <li class=""><a class="">Perfil</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-
-
-
-<nav class="navbar bg-dark">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStt7eBPFrGeDNLOEE658WrCZl4GyOmloZpeesKWVDahXLhXPX5oUYIGWu0V8sFSnF5n-0&usqp=CAU" alt="">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Login</a></li>
-    <li><a href="#">User</a></li>
-  </ul>
-
-</nav>
-
-<nav class="navbar bg-dark" data-bs-theme="dark">
-  <ul>
-    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Login</a></li>
-    <li><a href="#">User</a></li>
-  </ul>
-</nav> -->
-
-
-<nav class="navbar navbar-expand-lg">
-  <div class="container" >
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav my-1">
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#" style="margin-left: 315px;">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Formulario De Cliente</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Formulario De Prestamo</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Interfaz De Clientes</a> </li>
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Interfaz De Prestamos</a> </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav my-1">
+         <li [routerLink]="item.path" *ngFor="let item of headerList" class="navbar__nav-item">
+            <a class="navbar__nav-link p-2" aria-current="page" style="margin-left: 50px;">{{ item.name }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
-<!-- End Example Code -->
+  </nav>
 </body>
 

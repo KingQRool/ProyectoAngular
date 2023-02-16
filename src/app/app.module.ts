@@ -7,6 +7,9 @@ import { LoanTableComponent } from './loan-table/loan-table.component';
 import { LoanFormComponent } from './loan-form/loan-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { CustomersModule } from './customers/customers.module';
+import { FormsModule } from "@angular/forms";
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CustomersModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

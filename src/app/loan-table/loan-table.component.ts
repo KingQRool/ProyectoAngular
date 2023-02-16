@@ -6,9 +6,7 @@ import { Loan } from '../models/loan.model';
   templateUrl: './loan-table.component.html',
   styleUrls: ['./loan-table.component.scss']
 })
-
 export class LoanTableComponent {
-
     loans: Loan[] = [
       {
         loanId: '1',

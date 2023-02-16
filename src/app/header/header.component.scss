@@ -1,22 +1,24 @@
-li{
-  padding: 2px;
-  margin: 2px;
-
-  border-right: 1px solid #00754a;
-
-}
-
-
-
 body{
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
 
-img{
-  height: 10%;
+.navbar{
+  background-color: #08b475;
+
+  &__nav-item{
+    padding: 2px;
+    margin: 2px;
+    border-right: 1px solid #00754a;
+  }
+
+  &__nav-link{
+    text-decoration: none;
+    background-color: #08b475;
+    color: azure;
+    &:hover{
+      background-color: #80d6b7;
+    }
+  }
 }
 
-nav{
-  background-color: #08b475;
-}
