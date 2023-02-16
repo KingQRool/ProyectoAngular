@@ -6,18 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  headerList = ['Inicio','Clientes','Prestamos','Productos']
+  headerList = [
+    {id:1,
+    name:'Inicio',
+    path: '/Inicio'
+    },
+    {
+    id: 2,
+    name: 'Clientes',
+    path: '/Clientes'
+    },
+    {
+    id: 3,
+    name: 'Prestamos',
+    path: '/Prestamos'
+  }
+]
 }
+
 
 // {
 // id: 1,
 // name: 'Inicio',
 // },
-// {
-// id: 1,
-// name: 'Clientes',
-// },
-// {
-// id: 1,
-// name: 'Prestamos',
+
 // }
